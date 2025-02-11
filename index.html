@@ -1,72 +1,118 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>Matheus Campos - Perfil Profissional</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Meu Nome</a>
+            <!-- Removido o link "Matheus Campos" -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav"> <!-- Adicionado justify-content-center -->
+                <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Formação</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" onclick="changeLanguage('en')">EN</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" onclick="changeLanguage('pt')">PT</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <header class="text-center py-5 bg-primary text-white">
-        <h1 id="welcome">Bem-vindo ao Meu Portfólio</h1>
-        <p id="intro">Aqui você encontrará informações sobre mim e meus trabalhos.</p>
+        <h1>Bem-vindo ao meu perfil profissional</h1>
+        <p>Aqui você encontrará informações sobre mim e minha trajetória profissional.</p>
+        <a href="#contact" class="cta-button">Entrar em Contato</a>
     </header>
+
+    <!-- Nova seção: Foto e Informações Básicas -->
+    <section id="profile" class="container py-5">
+        <div class="profile-container">
+            <div class="profile-pic">
+                <img src="matheus.JPG" alt="Foto de Matheus Campos" class="rounded-circle">
+            </div>
+            <div class="profile-info">
+                <h2>Matheus Campos Sousa</h2>
+                <ul>
+                    <li><strong>Data de Nascimento:</strong> 02/06/1998</li>
+                    <li><strong>Cidade:</strong> Maria da Fé, MG</li>
+                    <li><strong>Email:</strong> campos98matheus@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
     <section id="about" class="container py-5">
         <h2>Sobre Mim</h2>
-        <p id="about-text">[Coloque aqui sua descrição profissional]</p>
+        <p>
+            Sou formado em Sistemas de Informação e atualmente estou cursando Pós-graduação em Governança de TI, com interesse em gestão de processos, segurança da informação e gerenciamento de serviços de TI.
+        </p>
+        <p>
+            Possuo experiência em desenvolvimento front-end, trabalhando com HTML, CSS, JavaScript e React, e agora tenho foco na área de Governança e Segurança da Informação, aplicando meu conhecimento técnico para aprimorar processos, reduzir riscos e garantir a conformidade das operações de TI.
+        </p>
+        <p><strong>💡Interesses:</strong></p>
+        <ul>
+            <li>✔️ ITIL, COBIT, ISO 27001, LGPD</li>
+            <li>✔️ Gestão de riscos e conformidade em TI</li>
+            <li>✔️ Segurança da informação e proteção de dados</li>
+            <li>✔️ Auditoria e governança de TI</li>
+            <li>✔️ Gestão de serviços de TI e SLA</li>
+        </ul>
     </section>
 
-    <section id="projects" class="container py-5">
-        <h2>Projetos</h2>
-        <p id="projects-text">[Adicione uma lista dos seus projetos, com links]</p>
+    <section id="education" class="container py-5">
+        <h2>Formações Acadêmicas</h2>
+        <ul>
+            <li><strong>Bacharel em Sistemas de Informação</strong> - Universidade Federal de Itajubá (2023)</li>
+            <li><strong>Pós-graduando em Governança em TI</strong> - Universidade Cruzeiro do Sul (2024-)</li>
+        </ul>
     </section>
 
-    <section id="contact" class="container py-5">
+    <section id="skills" class="container py-5 text-center">
+        <h2>💡 Habilidades e Conhecimentos</h2>
+        <div class="skills-container">
+            <div class="skill"><span>🖥️</span> Pacote Office</div>
+            <div class="skill"><span>💬</span> Comunicação</div>
+            <div class="skill"><span>🚀</span> Proatividade</div>
+            <div class="skill"><span>🤝</span> Trabalho em equipe</div>
+            <div class="skill"><span>🖥️</span> Sistemas ERP</div>
+            <div class="skill"><span>📊</span> Gerência de projetos</div>
+            <div class="skill"><span>⚡</span> Metodologias ágeis</div>
+            <div class="skill"><span>🗄️</span> Banco de dados relacional</div>
+            <div class="skill"><span>💾</span> SQL (MySQL, PostgreSQL)</div>
+            <div class="skill"><span>🌿</span> Git</div>
+            <div class="skill"><span>🎨</span> Photoshop</div>
+            <div class="skill"><span>📌</span> SCRUM e Kanban</div>
+            <div class="skill"><span>💻</span> Python e C</div>
+            <div class="skill"><span>🌐</span> Desenvolvimento web (HTML, CSS, JS, React, WordPress)</div>
+            <div class="skill"><span>📜</span> BPMN e UML</div>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="container py-5 text-center">
         <h2>Contato</h2>
-        <p>Email: [Seu Email]</p>
-        <p>LinkedIn: [Seu Perfil]</p>
-        <p>GitHub: [Seu GitHub]</p>
+        <div class="contact-links">
+            <a href="mailto:campos98matheus@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Gmail" title="Enviar Email">
+            </a>
+            <a href="https://www.linkedin.com/in/matheus-campos-it/" target="_blank" rel="noopener noreferrer" class="contact-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" title="Visitar LinkedIn">
+            </a>
+            <a href="https://github.com/matheuscampos-it" target="_blank" rel="noopener noreferrer" class="contact-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" title="Visitar GitHub">
+            </a>
+        </div>
     </section>
 
     <footer class="text-center bg-dark text-white py-3">
-        <p>&copy; 2024 Meu Nome. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Matheus Campos. Todos os direitos reservados.</p>
     </footer>
-
-    <script>
-        function changeLanguage(lang) {
-            if (lang === 'en') {
-                document.getElementById('welcome').innerText = 'Welcome to My Portfolio';
-                document.getElementById('intro').innerText = 'Here you will find information about me and my work.';
-                document.getElementById('about-text').innerText = '[Write your professional description here]';
-                document.getElementById('projects-text').innerText = '[Add a list of your projects with links]';
-            } else {
-                document.getElementById('welcome').innerText = 'Bem-vindo ao Meu Portfólio';
-                document.getElementById('intro').innerText = 'Aqui você encontrará informações sobre mim e meus trabalhos.';
-                document.getElementById('about-text').innerText = '[Coloque aqui sua descrição profissional]';
-                document.getElementById('projects-text').innerText = '[Adicione uma lista dos seus projetos, com links]';
-            }
-        }
-    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
